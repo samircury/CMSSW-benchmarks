@@ -88114,7 +88114,7 @@ process.looseSoftPFElectronCleanerForwardCuts = cms.PSet(
 )
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(10)
+    input = cms.untracked.int32(300)
 )
 
 process.mediumSoftPFElectronCleanerBarrelCuts = cms.PSet(
