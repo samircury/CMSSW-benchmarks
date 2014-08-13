@@ -66911,7 +66911,7 @@ process.GlobalTag = cms.ESSource("PoolDBESSource",
     BlobStreamerName = cms.untracked.string('TBufferBlobStreamingService'),
     toGet = cms.VPSet(),
     connect = cms.string('frontier://FrontierProd/CMS_COND_31X_GLOBALTAG'),
-    globaltag = cms.string('GR_P_V41::All')
+    globaltag = cms.string('GR_P_V43D::All')
 )
 
 
