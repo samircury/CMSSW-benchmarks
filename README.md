@@ -3,12 +3,13 @@ CMSSW-benchmarks
 
 Ok, still not in a distributable point, but to make this work you only need :
 
+```
 [root@compute-opteron-11 bm]# wget --no-check-certificate https://github.com/samircury/CMSSW-benchmarks/archive/master.zip
 
-
 [root@compute-opteron-11 CMSSW-benchmarks-master]# chmod +x benchmark.sh  run.sh 
+```
 
-;Define your proxy here if you need "export https_proxy=http://hn:3128"
+Define your proxy here if you need "export https_proxy=http://hn:3128"
 
 [root@compute-opteron-11 CMSSW-benchmarks-master]# source benchmark.sh 
 ```
