@@ -8,3 +8,7 @@ cmsenv
 echo "Im running at $HOSTNAME $PWD"
 cp ../../PSet.py .
 cmsRun -e PSet.py
+# If we don't do this, the Couch report script will not find the 
+# right version of ZLIB and will crash badly.
+export LD_LIBRARY_PATH=""
+../../report-fjr-couch-caltech FrameworkJobReport.xml

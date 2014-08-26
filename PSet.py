@@ -13,7 +13,7 @@ process.ALCARECOTkAlLAST0Producer = cms.EDProducer("LaserAlignmentT0Producer",
     ))
 )
 
-process.add_(cms.Service(“CPU”))
+process.add_(cms.Service("CPU"))
 
 process.ALCARECOTkAlLASsiStripDigis = cms.EDProducer("SiStripRawToDigiModule",
     UseDaqRegister = cms.bool(False),
