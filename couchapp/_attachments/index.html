@@ -27,7 +27,7 @@
    function drawVisualization() {
 	    var db = $.couch.db("cmssw-benchmarks");
 	    var dataTable =  [["Processor","Average TpE", "Min TpE", "Max TpE", "Entries"]];
-	    db.view("cmssw-benchmarks/TpEStatsPerCPU", { success: function(data) {
+	    db.view("cmssw-benchmarks/TpEStatsPerCPU", { group_level : 1, success: function(data) {
 	       $.each(data.rows,function(index,row){	
                         var proc = row.key;
 			console.log(proc);
