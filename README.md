@@ -1,7 +1,7 @@
 CMSSW-benchmarks
 ================
 
-Ok, still not in a distributable point, but to make this work you only need :
+Ok, still not perfect, could only spend very little time on this. But to make this work you only need :
 
 ```
 [root@compute-opteron-11 bm]# wget --no-check-certificate https://github.com/samircury/CMSSW-benchmarks/archive/master.zip
@@ -24,9 +24,14 @@ root     15729 16.5  1.6 446448 270544 pts/1   S    08:24   0:22 cmsRun -e ../PS
 root     15732 16.7  1.7 446452 282068 pts/1   S    08:24   0:22 cmsRun -e ../PSet.py
 ```
 
+It wil start 1 CMS job per core in the node, so you want to shutdown your batch system. results will be under "run1/CMSSW_5_3_8_patch3/src/${JOB_ID}/" directory. In Opteron 6378 it uses to last around 3h for 300 events.
+
 To monitor what jobs are doing :
 
 ```
 [root@compute-opteron-11 CMSSW-benchmarks-master]# tail -n200 run1/CMSSW_5_3_8_patch3/src/0/nohup.out 
 [root@compute-opteron-11 CMSSW-benchmarks-master]# 
 ```
+Afterwards I just grep the interesting parts of the FJR.
+
+You might need to have the cmsenv setup already (just cmsrel on /tmp would be enough). 
