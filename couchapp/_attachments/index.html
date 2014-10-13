@@ -30,8 +30,6 @@
 	    db.view("cmssw-benchmarks/TpEStatsPerCPU", { group_level : 1, success: function(data) {
 	       $.each(data.rows,function(index,row){	
                         var proc = row.key;
-			console.log(proc);
-			console.log(row);
                         var avgTpe = row.value.sum / row.value.count;
                         dataTable.push([proc, avgTpe.toFixed(2), row.value.min.toFixed(2), 
                                 row.value.max.toFixed(2), row.value.count]);
@@ -50,10 +48,11 @@
   google.setOnLoadCallback(drawVisualization);
 
 </script>
-
   </head>
   <body>
+
     <div id="visualization_div" style="height: 800px; width: 1200px;"></div>
+    
   </body>
 </html>
 
