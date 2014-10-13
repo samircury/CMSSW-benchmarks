@@ -6,20 +6,8 @@ Log = benchmark.$(Cluster).log
 getenv = True
 should_transfer_files = yes
 input = ../PSet.py
-transfer_input_files = ../PSet.py,report-fjr-couch-caltech 
-+AccountingGroup = "cms_production"
-#transfer_output_files = CMSSW_5_3_8_patch3/src/FrameworkJobReport.xml
+transfer_input_files = ../PSet.py,report-fjr-couch
++AccountingGroup = "backfill"
+transfer_output_files = CMSSW_5_3_8_patch3/src/FrameworkJobReport.xml
 
-
-#Initialdir = run_1         
 Queue 5 
-#Initialdir = run_2         
-#Queue
-#Initialdir = run_3         
-#Queue
-#Initialdir = run_4         
-#Queue
-#Initialdir = run_5         
-#Queue
-#Initialdir = run_6         
-#Queue
