@@ -1,7 +1,9 @@
 CMSSW-benchmarks
 ================
 
-Ok, still not perfect, could only spend very little time on this. But to make this work you only need :
+Please mind that I had to spend very little time on this. Still it works. If you think of improvements please send pull requests or issues.
+
+To make this work you need :
 
 ```
 [root@compute-opteron-11 bm]# wget --no-check-certificate https://github.com/samircury/CMSSW-benchmarks/archive/master.zip
